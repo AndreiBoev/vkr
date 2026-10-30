@@ -78,8 +78,16 @@ def parse_stats(output: str) -> dict:
     if hops is None:
         hops = grab("Hops average", output)
 
+    def grab_packet_max(text: str) -> float | None:
+        match = re.search(
+            r"Packet latency average\s*=\s*[0-9.eE+-]+[^\n]*\n\s*minimum\s*=\s*[0-9.eE+-]+[^\n]*\n\s*maximum\s*=\s*([0-9.eE+-]+)",
+            text,
+        )
+        return float(match.group(1)) if match else None
+
     return {
         "packet_latency_avg": grab("Packet latency average", overall),
+        "packet_latency_max": grab_packet_max(overall),
         "network_latency_avg": grab("Network latency average", overall),
         "flit_latency_avg": grab("Flit latency average", overall),
         "accepted_flit_rate": grab("Accepted flit rate average", overall),

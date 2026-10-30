@@ -1,0 +1,150 @@
+{
+  "google": {
+    "source": "Google Cloud Blog, 22 Apr 2026, TPU 8t/8i technical deep dive",
+    "chips_connected": 1152,
+    "chips_active": 1024,
+    "hierarchy": "4 TPU × 8 blocks × 36 groups",
+    "diameter": 7,
+    "torus_reference": "8×8×16, diameter 16",
+    "diameter_reduction": "56%",
+    "all_to_all_latency_improvement": "up to 50%",
+    "ici_bandwidth_tbps": 19.2,
+    "model_hop_ratio_vs_torus": 0.6507820380172487,
+    "model_latency_cut_vs_torus_pct": 34.92179619827513
+  },
+  "topologies": [
+    {
+      "name": "boardfly_4x8x36",
+      "family": "boardfly",
+      "description": "Канонический Boardfly: K4 блоков, K8 групп по меди, K36 через OCS",
+      "hierarchy": {
+        "chips_per_block": 4,
+        "blocks_per_group": 8,
+        "groups": 36
+      },
+      "google_diameter": 7,
+      "google_max_degree": 7,
+      "anynet_file": "experiments/topologies/boardfly_4x8x36.anynet",
+      "n": 1152,
+      "undirected_links": 3366,
+      "directed_channels": 6732,
+      "min_degree": 4,
+      "max_degree": 7,
+      "mean_degree": 5.84375,
+      "links_by_kind": {
+        "board": 1728,
+        "copper": 1008,
+        "optical": 630
+      },
+      "diameter": 7,
+      "average_shortest_path": 5.211345508736365,
+      "hop_histogram": {
+        "1": 6732,
+        "2": 25178,
+        "3": 80566,
+        "4": 208560,
+        "5": 415434,
+        "6": 426576,
+        "7": 162906
+      },
+      "intra_bb_asp": 1.0,
+      "intra_group_asp": 2.4732142857142856,
+      "inter_group_asp": 5.29107917906746,
+      "copper_ports_per_bb": {
+        "min": 7,
+        "max": 7,
+        "mean": 7.0
+      }
+    },
+    {
+      "name": "boardfly_4x8x36_ports",
+      "family": "boardfly",
+      "description": "Boardfly с 11 медными линками на блок (вторая chip-пара между соседями)",
+      "hierarchy": {
+        "chips_per_block": 4,
+        "blocks_per_group": 8,
+        "groups": 36
+      },
+      "google_diameter": 7,
+      "google_max_degree": 7,
+      "anynet_file": "experiments/topologies/boardfly_4x8x36_ports.anynet",
+      "n": 1152,
+      "undirected_links": 3942,
+      "directed_channels": 7884,
+      "min_degree": 6,
+      "max_degree": 7,
+      "mean_degree": 6.84375,
+      "links_by_kind": {
+        "board": 1728,
+        "copper": 1584,
+        "optical": 630
+      },
+      "diameter": 7,
+      "average_shortest_path": 4.833552044116227,
+      "hop_histogram": {
+        "1": 7884,
+        "2": 32952,
+        "3": 98744,
+        "4": 298498,
+        "5": 525320,
+        "6": 319432,
+        "7": 43122
+      },
+      "intra_bb_asp": 1.0,
+      "intra_group_asp": 2.2311507936507935,
+      "inter_group_asp": 4.9088805183531745,
+      "copper_ports_per_bb": {
+        "min": 11,
+        "max": 11,
+        "mean": 11.0
+      }
+    },
+    {
+      "name": "torus_8x8x16",
+      "family": "torus",
+      "description": "3D-тор 8×8×16 (1024 чипа) — эталон диаметра 16 у Google",
+      "hierarchy": {
+        "dims": [
+          8,
+          8,
+          16
+        ]
+      },
+      "google_diameter": 16,
+      "google_max_degree": 6,
+      "anynet_file": "experiments/topologies/torus_8x8x16.anynet",
+      "n": 1024,
+      "undirected_links": 3072,
+      "directed_channels": 6144,
+      "min_degree": 6,
+      "max_degree": 6,
+      "mean_degree": 6.0,
+      "links_by_kind": {
+        "torus": 3072
+      },
+      "diameter": 16,
+      "average_shortest_path": 8.007820136852395,
+      "hop_histogram": {
+        "1": 6144,
+        "2": 18432,
+        "3": 38912,
+        "4": 65536,
+        "5": 92160,
+        "6": 112640,
+        "7": 124928,
+        "8": 129024,
+        "9": 124928,
+        "10": 112640,
+        "11": 92160,
+        "12": 65536,
+        "13": 38912,
+        "14": 18432,
+        "15": 6144,
+        "16": 1024
+      },
+      "intra_bb_asp": null,
+      "intra_group_asp": null,
+      "inter_group_asp": null
+    }
+  ]
+}
