@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="440" font-family="sans-serif">
+<rect width="780" height="440" fill="white"/>
+<text x="390.0" y="22" text-anchor="middle" font-size="14">Средняя задержка пакета, n=16, campaign=flit1</text>
+<line x1="70" y1="36" x2="70" y2="384" stroke="#333"/>
+<line x1="70" y1="384" x2="756" y2="384" stroke="#333"/>
+<text x="16" y="210.0" font-size="11" transform="rotate(-90 16 210.0)">latency</text>
+<text x="413.0" y="426" text-anchor="middle" font-size="12">injection_rate</text>
+<text x="62" y="388.0" text-anchor="end" font-size="10">0.0</text>
+<text x="62" y="40.0" text-anchor="end" font-size="10">16.2</text>
+<polyline fill="none" stroke="#1f77b4" stroke-width="2" points="70.0,175.1 168.0,173.5 364.0,172.5 560.0,170.6 756.0,168.1"/>
+<circle cx="70.0" cy="175.1" r="3" fill="#1f77b4"/>
+<circle cx="168.0" cy="173.5" r="3" fill="#1f77b4"/>
+<circle cx="364.0" cy="172.5" r="3" fill="#1f77b4"/>
+<circle cx="560.0" cy="170.6" r="3" fill="#1f77b4"/>
+<circle cx="756.0" cy="168.1" r="3" fill="#1f77b4"/>
+<polyline fill="none" stroke="#ff7f0e" stroke-width="2" points="70.0,92.7 168.0,92.9 364.0,90.4 560.0,86.2 756.0,81.4"/>
+<circle cx="70.0" cy="92.7" r="3" fill="#ff7f0e"/>
+<circle cx="168.0" cy="92.9" r="3" fill="#ff7f0e"/>
+<circle cx="364.0" cy="90.4" r="3" fill="#ff7f0e"/>
+<circle cx="560.0" cy="86.2" r="3" fill="#ff7f0e"/>
+<circle cx="756.0" cy="81.4" r="3" fill="#ff7f0e"/>
+<polyline fill="none" stroke="#2ca02c" stroke-width="2" points="70.0,115.2 168.0,113.7 364.0,112.6 560.0,109.6 756.0,106.7"/>
+<circle cx="70.0" cy="115.2" r="3" fill="#2ca02c"/>
+<circle cx="168.0" cy="113.7" r="3" fill="#2ca02c"/>
+<circle cx="364.0" cy="112.6" r="3" fill="#2ca02c"/>
+<circle cx="560.0" cy="109.6" r="3" fill="#2ca02c"/>
+<circle cx="756.0" cy="106.7" r="3" fill="#2ca02c"/>
+<polyline fill="none" stroke="#d62728" stroke-width="2" points="70.0,91.0 168.0,89.7 364.0,88.6 560.0,85.8 756.0,83.4"/>
+<circle cx="70.0" cy="91.0" r="3" fill="#d62728"/>
+<circle cx="168.0" cy="89.7" r="3" fill="#d62728"/>
+<circle cx="364.0" cy="88.6" r="3" fill="#d62728"/>
+<circle cx="560.0" cy="85.8" r="3" fill="#d62728"/>
+<circle cx="756.0" cy="83.4" r="3" fill="#d62728"/>
+<rect x="576" y="40" width="12" height="8" fill="#1f77b4"/>
+<text x="594" y="48" font-size="11">k16_complete</text>
+<rect x="576" y="56" width="12" height="8" fill="#ff7f0e"/>
+<text x="594" y="64" font-size="11">c16_1_4</text>
+<rect x="576" y="72" width="12" height="8" fill="#2ca02c"/>
+<text x="594" y="80" font-size="11">c16_1_2_4</text>
+<rect x="576" y="88" width="12" height="8" fill="#d62728"/>
+<text x="594" y="96" font-size="11">c16_1_2_4_hetero</text>
+</svg>

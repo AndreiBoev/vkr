@@ -1,0 +1,17 @@
+# BookSim build artifacts (submodule working tree)
+third_party/booksim2/src/*.o
+third_party/booksim2/src/*.d
+third_party/booksim2/src/*/*.o
+third_party/booksim2/src/*/*.d
+third_party/booksim2/src/booksim
+third_party/booksim2/src/lex.yy.c
+third_party/booksim2/src/y.tab.c
+third_party/booksim2/src/y.tab.h
+
+# Generated per-run configs and raw logs
+experiments/runs/
+__pycache__/
+*.pyc
+.python-version
+*.swp
+.DS_Store
