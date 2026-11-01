@@ -10,7 +10,7 @@ from collections import deque
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-BOOKSIM = ROOT / "third_party" / "booksim2" / "src" / "booksim"
+BOOKSIM = ROOT / "booksim2" / "src" / "booksim"
 OUT = ROOT / "experiments"
 
 BB, GROUP_BBS, GROUPS = 4, 8, 36

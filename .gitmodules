@@ -1,3 +1,3 @@
-[submodule "third_party/booksim2"]
-	path = third_party/booksim2
+[submodule "booksim2"]
+	path = booksim2
 	url = https://github.com/booksim/booksim2.git

@@ -1,4 +1,4 @@
-BOOKSIM_DIR := third_party/booksim2/src
+BOOKSIM_DIR := booksim2/src
 BOOKSIM     := $(BOOKSIM_DIR)/booksim
 PYTHON      ?= python3
 
