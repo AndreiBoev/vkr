@@ -1,6 +1,0 @@
-topology,traffic,injection_rate,n,diameter,graph_asp,exit_code,ok,log,packet_latency_avg,packet_latency_max,network_latency_avg,flit_latency_avg,accepted_flit_rate,injected_flit_rate,hops_avg,deadlock_warning,unstable,completed,time_taken
-boardfly_4x8x36,uniform,0.02,1152,7,5.211345508736365,255,True,experiments/runs/boardfly/boardfly_4x8x36_uniform_inj0p02/booksim.log,26.8658,37.0,26.8658,26.8961,0.0199967,0.0199946,6.20231,False,False,True,1271.0
-boardfly_4x8x36,uniform,0.05,1152,7,5.211345508736365,255,True,experiments/runs/boardfly/boardfly_4x8x36_uniform_inj0p05/booksim.log,26.9879,39.0,26.9879,27.0155,0.0502018,0.0502452,6.20967,False,False,True,1271.0
-boardfly_4x8x36_ports,uniform,0.02,1152,7,4.833552044116227,255,True,experiments/runs/boardfly/boardfly_4x8x36_ports_uniform_inj0p02/booksim.log,25.3523,37.0,25.3523,25.3759,0.0200087,0.0199946,5.8265,False,False,True,1270.0
-boardfly_4x8x36_ports,uniform,0.05,1152,7,4.833552044116227,255,True,experiments/runs/boardfly/boardfly_4x8x36_ports_uniform_inj0p05/booksim.log,25.4435,37.0,25.4435,25.4686,0.0502138,0.0502452,5.83015,False,False,True,1270.0
-boardfly_4x8x36,randperm,0.02,1152,7,5.211345508736365,255,True,experiments/runs/boardfly/boardfly_4x8x36_randperm_inj0p02/booksim.log,26.9533,37.0,26.9533,26.9771,0.0199957,0.0199946,6.2269,False,False,True,1271.0
