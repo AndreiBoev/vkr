@@ -11,7 +11,7 @@ help:
 	@echo "make topologies   — сгенерировать anynet-файлы (K_n и циркулянты)"
 	@echo "make simulate     — прогнать сравнение полносвязной и циркулянтных сетей"
 	@echo "make smoke        — короткий прогон штатного mesh-примера BookSim"
-	@echo "make boardfly     — модель Boardfly 4×8×36 и сравнение с тором 8×8×16"
+	@echo "make boardfly     — модель Boardfly 4×8×36 (1152 TPU)"
 	@echo "make clean        — удалить сборку BookSim и сгенерированные прогоны"
 
 booksim: $(BOOKSIM)

@@ -1,16 +1,16 @@
 {
-  "google": {
+  "boardfly": {
     "source": "Google Cloud Blog, 22 Apr 2026, TPU 8t/8i technical deep dive",
     "chips_connected": 1152,
     "chips_active": 1024,
     "hierarchy": "4 TPU × 8 blocks × 36 groups",
     "diameter": 7,
-    "torus_reference": "8×8×16, diameter 16",
-    "diameter_reduction": "56%",
-    "all_to_all_latency_improvement": "up to 50%",
-    "ici_bandwidth_tbps": 19.2,
-    "model_hop_ratio_vs_torus": 0.6507820380172487,
-    "model_latency_cut_vs_torus_pct": 34.92179619827513
+    "max_degree": 7,
+    "mean_degree": 5.84,
+    "bb_external_links": 16,
+    "bb_intra_group_links": 11,
+    "bb_optical_links": 5,
+    "ici_bandwidth_tbps": 19.2
   },
   "topologies": [
     {
@@ -22,8 +22,8 @@
         "blocks_per_group": 8,
         "groups": 36
       },
-      "google_diameter": 7,
-      "google_max_degree": 7,
+      "expected_diameter": 7,
+      "expected_max_degree": 7,
       "anynet_file": "experiments/topologies/boardfly_4x8x36.anynet",
       "n": 1152,
       "undirected_links": 3366,
@@ -65,8 +65,8 @@
         "blocks_per_group": 8,
         "groups": 36
       },
-      "google_diameter": 7,
-      "google_max_degree": 7,
+      "expected_diameter": 7,
+      "expected_max_degree": 7,
       "anynet_file": "experiments/topologies/boardfly_4x8x36_ports.anynet",
       "n": 1152,
       "undirected_links": 3942,
@@ -98,53 +98,6 @@
         "max": 11,
         "mean": 11.0
       }
-    },
-    {
-      "name": "torus_8x8x16",
-      "family": "torus",
-      "description": "3D-тор 8×8×16 (1024 чипа) — эталон диаметра 16 у Google",
-      "hierarchy": {
-        "dims": [
-          8,
-          8,
-          16
-        ]
-      },
-      "google_diameter": 16,
-      "google_max_degree": 6,
-      "anynet_file": "experiments/topologies/torus_8x8x16.anynet",
-      "n": 1024,
-      "undirected_links": 3072,
-      "directed_channels": 6144,
-      "min_degree": 6,
-      "max_degree": 6,
-      "mean_degree": 6.0,
-      "links_by_kind": {
-        "torus": 3072
-      },
-      "diameter": 16,
-      "average_shortest_path": 8.007820136852395,
-      "hop_histogram": {
-        "1": 6144,
-        "2": 18432,
-        "3": 38912,
-        "4": 65536,
-        "5": 92160,
-        "6": 112640,
-        "7": 124928,
-        "8": 129024,
-        "9": 124928,
-        "10": 112640,
-        "11": 92160,
-        "12": 65536,
-        "13": 38912,
-        "14": 18432,
-        "15": 6144,
-        "16": 1024
-      },
-      "intra_bb_asp": null,
-      "intra_group_asp": null,
-      "inter_group_asp": null
     }
   ]
 }
