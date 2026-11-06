@@ -1,0 +1,15 @@
+booksim2/src/*.o
+booksim2/src/*.d
+booksim2/src/*/*.o
+booksim2/src/*/*.d
+booksim2/src/booksim
+booksim2/src/lex.yy.c
+booksim2/src/y.tab.c
+booksim2/src/y.tab.h
+
+experiments/
+__pycache__/
+*.pyc
+.python-version
+*.swp
+.DS_Store
